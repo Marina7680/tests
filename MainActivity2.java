@@ -1,21 +1,20 @@
-package com.example.tests;
+package com.example.whatcharacterareyou;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.view.View;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+
 public class MainActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
-
     }
-
     public void goNewView(View view) {
-        Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+        Intent intent = new Intent(getApplicationContext(), Activity_Character_Multiplication.class);
         startActivity(intent);
     }
 }
